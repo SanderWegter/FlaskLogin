@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<div class="container loginMain">
+    <div class="loginForm">
+        <form action="" method="POST">
+
+            {% if error %}
+            	<p class="bg-danger"><strong>Error:</strong> {{ error }} </p>
+           	{% endif %}
+
+            <center><h3>My Application</h3></center>
+            <div class="input-group">
+                <span class="input-group-addon" id="usernameField">Username</span>
+                <input type="text" class="form-control" name="username" id="user" aria-describedby="usernameField" autocomplete="n">
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon" id="passwordField">Password</span>
+                <input type="password" class="form-control" id="pass" name="password" aria-describedby="passwordField" autocomplete="n">
+            </div>
+            <br>
+            <input type="Submit" value="Login" class="btn btn-default btn-sm">
+        </form>
+    </div>
+</div>
+{% endblock %}

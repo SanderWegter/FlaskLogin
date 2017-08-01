@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>My Application - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</head>
+
+<body>
+    {% if session.username %}
+        <!-- Logged in only content like navigation bar and the logout button-->
+        <a href="/logout"><button class="btn btn-danger">Logout</button></a>
+    {% endif %} 
+    
+    {% block content %}
+    {% endblock %}
+</body>
+
+<footer>
+    <div class="fcontent container">
+    &copy; 2017 - Sander Wegter
+    </div>
+</footer>
+
+</html>

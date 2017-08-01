@@ -1,0 +1,18 @@
+server: {
+  "ip": "0.0.0.0",
+  "port": 54321,
+  "debug": True,
+  "appKey": "randomstringoftexthere"
+}
+mysql: {
+  "host": "localhost",
+  "user": "username",
+  "pass": "password",
+  "db": "applicationdatabase",
+  "port": 3306
+}
+ssl: {
+  "enabled": False,
+  "key": "",
+  "cert": ""
+}
