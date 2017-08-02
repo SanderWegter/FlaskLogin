@@ -1,6 +1,8 @@
 # Flask with authentication
 A small application which uses mysql for authentication. 
 
+![Login Page](https://sanderwegter.nl/github/images/FlaskLogin.png)
+
 ## Installation
 ```
 pip install -r requirements.txt
