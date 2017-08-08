@@ -1,4 +1,4 @@
-import lib.Config as Config
+from lib.Config import Config
 import bcrypt
 import MySQLdb
 import getpass

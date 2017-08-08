@@ -1,4 +1,5 @@
-import lib.Config as Config
+# import lib.Config as Config
+from lib.Config import Config
 import MySQLdb
 
 class Database:
