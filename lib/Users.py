@@ -1,5 +1,3 @@
-# import lib.Config as Config
-# import lib.Database as Database
 from lib import Config
 from lib.Database import Database
 import bcrypt

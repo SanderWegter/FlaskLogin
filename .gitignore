@@ -1,3 +1,4 @@
 config.yaml
 .DS_Store
-.pyc
+lib/*.pyc
+lib/__pycache__

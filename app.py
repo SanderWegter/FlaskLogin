@@ -1,7 +1,4 @@
 from flask import Flask, render_template, redirect, request, jsonify, session, url_for
-# import lib.Config as Config
-# import lib.Database as Database
-# import lib.Users as Users
 
 from lib.Config import Config
 from lib.Database import Database
